@@ -1,30 +1,59 @@
-# 📇 Apple to HubSpot Contact Automation
+# 📇 Anywhere Vision Contact Automation Project
 
-This project converts Apple Contacts exported as a `.vcf` (vCard) file into a clean, structured `.csv` file for easy import into **HubSpot**. It's built for small businesses that want to streamline their contact management and lay the foundation for automated customer engagement workflows.
+This project is part of a 3-phase automation initiative for **Anywhere Vision**, an optician business aiming to improve how they manage and engage with their customer base using HubSpot.
+
+This repo currently documents **Phase 1: Contact Setup**, which includes a working Python script for converting Apple Contacts to a structured CSV. It will expand to include Phases 2 and 3 as development progresses (tracked in separate branches and folders). that converts Apple Contacts exported as a `.vcf` (vCard) file into a structured `.csv` file ready for HubSpot import.
 
 ---
 
-## 🚀 Features
-- Parses vCard (`.vcf`) contact exports from Apple devices
-- Extracts key contact fields: First Name, Last Name, Email, Phone, Company
-- Outputs a clean `.csv` formatted for HubSpot import
-- Reusable Python script: drop in a new vCard file and convert it to csv for manual upload to Hubspot or other CRM tool
+## 📌 Project Phases
+
+### ✅ Phase 1: Setup (Complete)
+- Export Apple Contacts as `.vcf`
+- Convert to CSV using Python
+- Upload CSV manually into HubSpot
+- Centralize and structure baseline contact data
+
+### 🛠 Phase 2: Programmatic Contact Updating *(In Progress)*
+- Build a repeatable Python system to sync updated contact details from Apple Contacts to HubSpot
+- Eliminate the need for manual updates in the HubSpot interface
+- Actively developed in the `dev-phase-2` branch
+
+### 🚀 Phase 3: Marketing Automations *(Coming Soon)*
+- Use HubSpot + Zapier to trigger email campaigns, reminders, or alerts based on contact data changes
+- Focus on re-engagement and retention workflows
+- Development in the `dev-phase-3` branch
+
+---
+
+## 🚀 Features (Phase 1)
+- Parses Apple vCard `.vcf` contact exports
+- Extracts key fields: First Name, Last Name, Email, Phone, Company
+- Outputs a clean `.csv` ready for HubSpot manual import
+- Simple, repeatable script
 
 ---
 
 ## 🧰 Tools Used
 - Python 3.x
-- `vobject` for parsing `.vcf` files
-- `pandas` for structuring and exporting to `.csv`
+- `vobject` for vCard parsing
+- `pandas` for data transformation
 
 ---
 
 ## 📂 Folder Structure
 ```
 .
-├── input_contacts.vcf     # Your exported Apple Contacts file
-├── vcard_to_csv.py      # Python script to run
-├── output_contacts.csv    # Generated file, ready for HubSpot import
+├── convert_to_csv.py             # Phase 1 script (vCard to CSV)
+├── output_contacts.csv           # HubSpot-ready output
+├── data/
+│   └── input_contacts.vcf        # Sample Apple Contact export
+├── phase-2-sync/
+│   └── update_contacts.py        # (Coming soon) Script to update HubSpot via API
+├── phase-3-automation/
+│   └── zapier_workflows.md       # (Coming soon) Notes & logic for marketing automation
+├── docs/
+│   └── project_overview.md       # Project summary, goals, and phase notes
 ```
 
 ---
@@ -38,23 +67,15 @@ This project converts Apple Contacts exported as a `.vcf` (vCard) file into a cl
 3. Place your `.vcf` file in the root directory and name it `input_contacts.vcf`
 4. Run the script:
    ```bash
-   python vcard_to_csv.py
+   python convert_to_csv.py
    ```
-5. Upload `output_contacts.csv` to HubSpot via manual import
+5. Upload `output_contacts.csv` to HubSpot manually
 
 ---
 
-## 🔁 Optional: Automate with Zapier (Future Phase)
-- Set up Zapier workflows triggered by HubSpot activity:
-  - Send emails to new or updated contacts
-  - Notify staff or add calendar events
-  - Launch customer check-in sequences
-
----
-
-## 🧠 Why This Exists
-Small businesses often have customer data trapped in Apple Contacts or spreadsheets.
-This tool unlocks that data and sets the stage for CRM-driven automation — no fancy tools or subscriptions required.
+## 🔁 Next Phases
+- Follow development of Phase 2 and 3 in `dev-phase-2` and `dev-phase-3` branches
+- GitHub Issues and enhancements will be added as work progresses
 
 ---
 
