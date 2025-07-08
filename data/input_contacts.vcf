@@ -1,0 +1,38 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 14.4//EN
+N:Smith;Julia;;;
+FN:Julia Smith
+ORG:Brooklyn Creatives;
+TITLE:Marketing Director
+EMAIL;type=INTERNET;type=WORK;type=pref:jsmith@brooklyncreatives.com
+TEL;type=CELL;type=VOICE;type=pref:917-555-1234
+ADR;type=HOME;type=pref:;;50 Flatbush Ave;Brooklyn;NY;11217;
+NOTE:Attended brand strategy workshop 3/15/24
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 14.4//EN
+N:Lee;Marcus;;;
+FN:Marcus Lee
+ORG:Queens Fitness Co.;
+TITLE:Gym Manager
+EMAIL;type=INTERNET;type=WORK;type=pref:mlee@qfitness.co
+TEL;type=CELL;type=VOICE;type=pref:646-777-8899
+ADR;type=HOME;type=pref:;;2303 Northern Blvd;Queens;NY;11101;
+NOTE:Signed up for New Year’s package – 1/2/24
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 14.4//EN
+N:Garcia;Elena;;;
+FN:Elena Garcia
+ORG:Uptown Floral;
+TITLE:Owner
+EMAIL;type=INTERNET;type=WORK;type=pref:elena@uptownfloral.com
+TEL;type=CELL;type=VOICE;type=pref:212-888-4567
+ADR;type=HOME;type=pref:;;104 W 96th St;New York;NY;10025;
+NOTE:Requested call back in spring 4/22/24
+END:VCARD
