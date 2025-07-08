@@ -8,7 +8,7 @@ This project converts Apple Contacts exported as a `.vcf` (vCard) file into a cl
 - Parses vCard (`.vcf`) contact exports from Apple devices
 - Extracts key contact fields: First Name, Last Name, Email, Phone, Company
 - Outputs a clean `.csv` formatted for HubSpot import
-- Reusable Python script: drop in a new vCard and go
+- Reusable Python script: drop in a new vCard file and convert it to csv for manual upload to Hubspot or other CRM tool
 
 ---
 
@@ -23,7 +23,7 @@ This project converts Apple Contacts exported as a `.vcf` (vCard) file into a cl
 ```
 .
 ├── input_contacts.vcf     # Your exported Apple Contacts file
-├── convert_to_csv.py      # Python script to run
+├── vcard_to_csv.py      # Python script to run
 ├── output_contacts.csv    # Generated file, ready for HubSpot import
 ```
 
@@ -38,7 +38,7 @@ This project converts Apple Contacts exported as a `.vcf` (vCard) file into a cl
 3. Place your `.vcf` file in the root directory and name it `input_contacts.vcf`
 4. Run the script:
    ```bash
-   python convert_to_csv.py
+   python vcard_to_csv.py
    ```
 5. Upload `output_contacts.csv` to HubSpot via manual import
 
